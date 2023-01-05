@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Rock-Paper-Scissors Game</h1>
+        <div class="row mt-5">
+          <div class="col-4 text-center">
+            <h2>Player</h2>
+            <img src="/Svg/player.svg" alt="player" id="player-choice">
+          </div>
+          <div class="col-4 text-center">
+            <h2>VS</h2>
+          </div>
+          <div class="col-4 text-center">
+            <h2>Computer</h2>
+            <img src="/Svg/computer.svg" alt="computer" id="computer-choice">
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-4 text-center">
+            <button class="btn btn-primary" id="rock">Rock</button>
+          </div>
+          <div class="col-4 text-center">
+            <button class="btn btn-success" id="paper">Paper</button>
+          </div>
+          <div class="col-4 text-center">
+            <button class="btn btn-danger" id="scissors">Scissors</button>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <h2 id="result"></h2>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
