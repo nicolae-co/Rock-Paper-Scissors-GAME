@@ -3,6 +3,7 @@ const rockButton = document.querySelector('#rock');
 const paperButton = document.querySelector('#paper');
 const scissorsButton = document.querySelector('#scissors');
 const resultElement = document.querySelector('#result');
+const winsElement = document.querySelector('#wins');
 
 // get the player and computer choice elements
 const playerChoiceElement = document.querySelector('#player-choice');
@@ -10,7 +11,7 @@ const computerChoiceElement = document.querySelector('#computer-choice');
 
 // create an array of choices
 const choices = ['rock', 'paper', 'scissors'];
-
+let wins = 0;
 // create a function to play the game
 function play(playerChoice) {
   // get the computer's choice
@@ -29,8 +30,12 @@ function play(playerChoice) {
     (playerChoice === 'scissors' && computerChoice === 'paper')
   ) {
     resultElement.textContent = "You win!";
+    wins++;
+    winsElement.textContent = `Win steak: ${wins}`;
   } else {
     resultElement.textContent = "You lose!";
+    wins = 0;
+    winsElement.textContent = `Win steak: ${wins}`;
   }
 }
 
