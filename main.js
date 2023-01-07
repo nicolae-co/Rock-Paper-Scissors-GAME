@@ -31,11 +31,11 @@ function play(playerChoice) {
   ) {
     resultElement.textContent = "You win!";
     wins++;
-    winsElement.textContent = `Win steak: ${wins}`;
+    winsElement.innerText = `Win steak: ${wins}`;
   } else {
     resultElement.textContent = "You lose!";
     wins = 0;
-    winsElement.textContent = `Win steak: ${wins}`;
+    winsElement.innerText = `Win steak: ${wins}`;
   }
 }
 
